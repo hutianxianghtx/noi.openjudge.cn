@@ -1,0 +1,205 @@
+{
+  "log": {
+    "access": "/var/log/v2ray/access.log",
+    "error": "/var/log/v2ray/error.log",
+    "loglevel": "info"
+  },
+  "inbounds": [
+    {
+      "port": 443,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "6edd3bce-83c1-11ea-a110-f5854d90e7f8",
+            "alterId": 16,
+            "email": "hutianxiangcomputer1@htx"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "aes-128-gcm",
+        "tlsSettings": {},
+        "tcpSettings": {},
+        "kcpSettings": {},
+        "wsSettings": {},
+        "httpSettings": {},
+        "quicSettings": {}
+      }
+    },
+    {
+      "port": 444,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "72855e64-83c1-11ea-a110-f5854d90e7f8",
+            "alterId": 16,
+            "email": "hutianxiangmobile1@htx"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "aes-128-gcm",
+        "tlsSettings": {},
+        "tcpSettings": {},
+        "kcpSettings": {},
+        "wsSettings": {},
+        "httpSettings": {},
+        "quicSettings": {}
+      }
+    },
+    {
+      "port": 430,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "901424b6-83ca-11ea-a110-f5854d90e7f8",
+            "alterId": 16,
+            "email": "yinshiwencomputer1@htx"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "aes-128-gcm",
+        "tlsSettings": {},
+        "tcpSettings": {},
+        "kcpSettings": {},
+        "wsSettings": {},
+        "httpSettings": {},
+        "quicSettings": {}
+      }
+    },
+    {
+      "port": 431,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "77f0ead6-83ca-11ea-a110-f5854d90e7f8",
+            "alterId": 16,
+            "email": "yinshiwencomputer2@htx"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "aes-128-gcm",
+        "tlsSettings": {},
+        "tcpSettings": {},
+        "kcpSettings": {},
+        "wsSettings": {},
+        "httpSettings": {},
+        "quicSettings": {}
+      }
+    },
+    {
+      "port": 432,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "901424b6-83ca-11ea-a110-f5854d90e7f8",
+            "alterId": 16,
+            "email": "yinshiwenmobile1@htx"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "aes-128-gcm",
+        "tlsSettings": {},
+        "tcpSettings": {},
+        "kcpSettings": {},
+        "wsSettings": {},
+        "httpSettings": {},
+        "quicSettings": {}
+      }
+    },
+    {
+      "port": 433,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "9e4592c2-83ca-11ea-a110-f5854d90e7f8",
+            "alterId": 16,
+            "email": "yinshiwenipad1@htx"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "aes-128-gcm",
+        "tlsSettings": {},
+        "tcpSettings": {},
+        "kcpSettings": {},
+        "wsSettings": {},
+        "httpSettings": {},
+        "quicSettings": {}
+      }
+    },
+    {
+      "port": 450,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "21ea107e-83c3-11ea-a110-f5854d90e7f8",
+            "alterId": 16,
+            "email": "yuhaitaocomputer1@htx"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "aes-128-gcm",
+        "tlsSettings": {},
+        "tcpSettings": {},
+        "kcpSettings": {},
+        "wsSettings": {},
+        "httpSettings": {},
+        "quicSettings": {}
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    },
+    {
+      "protocol": "blackhole",
+      "settings": {},
+      "tag": "blocked"
+    }
+  ],
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "ip": [
+          "0.0.0.0/8",
+          "10.0.0.0/8",
+          "100.64.0.0/10",
+          "169.254.0.0/16",
+          "172.16.0.0/12",
+          "192.0.0.0/24",
+          "192.0.2.0/24",
+          "192.168.0.0/16",
+          "198.18.0.0/15",
+          "198.51.100.0/24",
+          "203.0.113.0/24",
+          "::1/128",
+          "fc00::/7",
+          "fe80::/10"
+        ],
+        "outboundTag": "blocked"
+      }
+    ]
+  }
+}
